@@ -8,6 +8,12 @@
 		<script src="lib/swiper/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 		<link rel="stylesheet" type="text/css" href="lib/swiper/swiper.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<style type="text/css">
+			.swiper-container{
+   				 --swiper-theme-color: #ff6600;
+   				 --swiper-pagination-color: #00ff33;/* 两种都可以 */
+			 }
+		</style>
 	</head>
 	<body>
 		<div id="app">
@@ -20,6 +26,7 @@
 					    <div class="swiper-slide"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1577114644293&di=649c4a60d066612642137957c31e454a&imgtype=0&src=http%3A%2F%2Fku.90sjimg.com%2Felement_origin_min_pic%2F00%2F85%2F77%2F1956e9e3afe5091.jpg" ></div>
 					   <div class="swiper-slide"><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3944385779,2338323098&fm=26&gp=0.jpg" ></div>
 					  </div>
+					 <div class="swiper-pagination"></div>
 					</div>
 				</div>
 				<div class="top_price">
@@ -79,7 +86,8 @@
 	</body>
 	<script type="text/javascript">
 		var mySwiper = new Swiper('.swiper-container', {
-			
+			autoplay: true,
+			loop : true,
 		})
 	</script>
 </html>
